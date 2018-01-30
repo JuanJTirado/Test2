@@ -1,0 +1,7 @@
+C:\Users\vv214ex\Source\Repos\SurveyEngineAPI\Survey.Entity\bin\Debug\Survey.Entity.dll
+C:\Users\vv214ex\Source\Repos\SurveyEngineAPI\Survey.Entity\bin\Debug\Survey.Entity.pdb
+C:\Users\vv214ex\Source\Repos\SurveyEngineAPI\Survey.Entity\bin\Debug\Newtonsoft.Json.dll
+C:\Users\vv214ex\Source\Repos\SurveyEngineAPI\Survey.Entity\obj\Debug\Survey.Entity.csprojResolveAssemblyReference.cache
+C:\Users\vv214ex\Source\Repos\SurveyEngineAPI\Survey.Entity\obj\Debug\Survey.Entity.csproj.CoreCompileInputs.cache
+C:\Users\vv214ex\Source\Repos\SurveyEngineAPI\Survey.Entity\obj\Debug\Survey.Entity.dll
+C:\Users\vv214ex\Source\Repos\SurveyEngineAPI\Survey.Entity\obj\Debug\Survey.Entity.pdb
