@@ -4,17 +4,14 @@ using System.Collections.Generic;
 
 namespace Survey.Entity
 {
-    public partial class ResponseTypes : EntityBase
+    public partial class ResponseTypes : EntityBaseInt
     {
         public ResponseTypes()
         {
             ControlTypes = new HashSet<ControlTypes>();
             Questions = new HashSet<Questions>();
         }
-
-        [JsonProperty("id")]
-        public int Id { get; set; }
-
+        
         [JsonProperty("name")]
         public string Name { get; set; }
 
@@ -23,10 +20,6 @@ namespace Survey.Entity
 
         [JsonProperty("questions")]
         public ICollection<Questions> Questions { get; set; }
-
-        public override string GetJson()
-        {
-            return JsonConvert.SerializeObject(this);
-        }
+        
     }
 }

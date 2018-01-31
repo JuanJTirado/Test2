@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Survey.Entity
 {
-    public partial class SurveyQuestions : EntityBase
+    public partial class SurveyQuestions : EntityBaseGuid
     {
         public SurveyQuestions()
         {
@@ -15,10 +15,7 @@ namespace Survey.Entity
             ResponseRank = new HashSet<ResponseRank>();
             ResponseString = new HashSet<ResponseString>();
         }
-
-        [JsonProperty("id")]
-        public Guid Id { get; set; }
-
+        
         [JsonProperty("questionOrder")]
         public int QuestionOrder { get; set; }
 
@@ -84,10 +81,6 @@ namespace Survey.Entity
 
         [JsonProperty("responseString")]
         public ICollection<ResponseString> ResponseString { get; set; }
-
-        public override string GetJson()
-        {
-            return JsonConvert.SerializeObject(this);
-        }
+        
     }
 }

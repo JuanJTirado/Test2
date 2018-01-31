@@ -4,11 +4,8 @@ using System.Collections.Generic;
 
 namespace Survey.Entity
 {
-    public partial class SurveyTemplateQuestions:EntityBase
+    public partial class SurveyTemplateQuestions : EntityBaseGuid
     {
-        [JsonProperty("id")]
-        public Guid Id { get; set; }
-
         [JsonProperty("templateId")]
         public int? TemplateId { get; set; }
 
@@ -37,10 +34,6 @@ namespace Survey.Entity
         public Questions Question { get; set; }
         [JsonProperty("template")]
         public SurveyTemplates Template { get; set; }
-
-        public override string GetJson()
-        {
-            return JsonConvert.SerializeObject(this);
-        }
+        
     }
 }

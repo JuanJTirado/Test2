@@ -4,11 +4,8 @@ using System.Collections.Generic;
 
 namespace Survey.Entity
 {
-    public partial class GroupMembers : EntityBase
+    public partial class GroupMembers : EntityBaseInt
     {
-
-        [JsonProperty("id")]
-        public int Id { get; set; }
 
         [JsonProperty("groupId")]
         public int? GroupId { get; set; }
@@ -23,10 +20,6 @@ namespace Survey.Entity
         public Groups Group { get; set; }
         [JsonProperty("user")]
         public Users User { get; set; }
-
-        public override string GetJson()
-        {
-            return JsonConvert.SerializeObject(this);
-        }
+        
     }
 }

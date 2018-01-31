@@ -7,6 +7,13 @@ namespace Survey.Entity
 {
     public abstract class EntityBase
     {
-        public abstract string GetJson();
+        public virtual string GetJson()
+        {
+            var settings = new JsonSerializerSettings()
+            {
+                DateTimeZoneHandling = DateTimeZoneHandling.Utc
+            };
+            return JsonConvert.SerializeObject(this, settings);
+        }
     }
 }

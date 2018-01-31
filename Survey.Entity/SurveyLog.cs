@@ -4,11 +4,8 @@ using System.Collections.Generic;
 
 namespace Survey.Entity
 {
-    public partial class SurveyLog : EntityBase
+    public partial class SurveyLog : EntityBaseInt
     {
-        [JsonProperty("id")]
-        public int Id { get; set; }
-
         [JsonProperty("date")]
         public DateTimeOffset? Date { get; set; }
 
@@ -26,10 +23,6 @@ namespace Survey.Entity
 
         [JsonProperty("exception")]
         public string Exception { get; set; }
-
-        public override string GetJson()
-        {
-            return JsonConvert.SerializeObject(this);
-        }
+        
     }
 }

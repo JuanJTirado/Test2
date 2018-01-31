@@ -4,11 +4,8 @@ using System.Collections.Generic;
 
 namespace Survey.Entity
 {
-    public partial class ControlTypes: EntityBase
+    public partial class ControlTypes: EntityBaseInt
     {
-
-        [JsonProperty("id")]
-        public int Id { get; set; }
 
         [JsonProperty("name")]
         public string Name { get; set; }
@@ -18,10 +15,6 @@ namespace Survey.Entity
 
         [JsonProperty("responseType")]
         public ResponseTypes ResponseType { get; set; }
-
-        public override string GetJson()
-        {
-            return JsonConvert.SerializeObject(this);
-        }
+        
     }
 }

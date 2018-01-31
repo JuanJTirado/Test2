@@ -47,6 +47,8 @@
     <Compile Include="Choices.cs" />
     <Compile Include="ControlTypes.cs" />
     <Compile Include="EntityBase.cs" />
+    <Compile Include="EntityBaseGuid.cs" />
+    <Compile Include="EntityBaseInt.cs" />
     <Compile Include="GroupMembers.cs" />
     <Compile Include="Groups.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
